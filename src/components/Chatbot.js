@@ -72,7 +72,7 @@ function Chatbot() {
     setInputText("");
 
     try {
-      const response = await fetch("http://localhost:8000/chat", {
+      const response = await fetch("https://backend-rag-chatbot.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
